@@ -133,13 +133,13 @@ O estado podem ser informados por siglas com 2 caracteres [case-insensitive](htt
 | Tocantins           | `to`      |
 
 
-#### Municipio
-O Municipio podem ser consultado através de seu nome por extenso. A API realizará os seguintes tratamentos:
+#### Município
+O Município pode ser consultado através de seu nome por extenso. A API realizará os seguintes tratamentos:
  - Remoção de Espaços
  - Remoção de acentos
- - Conversão do nome em letra minuscula
+ - Conversão do nome em letra minúscula
 
-portanto a busca por `São José dos Campos` sera entendida como `saojosedoscampos`
+portanto a busca por `São José dos Campos` será entendida como `saojosedoscampos`
 
 #### Tipos de Crimes 
 A Base de Dados categoriza 9 tipos de crimes que deverão ser consultados através do seu valor numérico
@@ -155,3 +155,6 @@ A Base de Dados categoriza 9 tipos de crimes que deverão ser consultados atrav�
 | Roubo de veículo                    | `7`       |
 | Roubo seguido de morte (latrocínio) | `8`       |
 | Tentativa de homicídio              | `9`       |
+
+## Agradecimentos
+[@lucifernandes](https://github.com/lucifernandes) - Pela Padronização e organização da base de dadoss
