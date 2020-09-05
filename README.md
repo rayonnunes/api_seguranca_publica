@@ -157,4 +157,4 @@ A Base de Dados categoriza 9 tipos de crimes que deverão ser consultados atrav�
 | Tentativa de homicídio              | `9`       |
 
 ## Agradecimentos
-[@lucifernandes](https://github.com/lucifernandes) - Pela Padronização e organização da base de dadoss
+[@lucifernandes](https://github.com/lucifernandes) - Pela Padronização e organização da base de dados
