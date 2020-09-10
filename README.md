@@ -156,5 +156,31 @@ A Base de Dados categoriza 9 tipos de crimes que deverão ser consultados atrav�
 | Roubo seguido de morte (latrocínio) | `8`       |
 | Tentativa de homicídio              | `9`       |
 
+## Ambiente de Desenvolvimento
+> Todos os comandos devem ser executados no diretório raiz deste projeto
+
+Para conexão com o banco de dados [MongoDB] é necessário um arquivo .env com a variável de ambiente que contém a chave da API do pymongo, o arquivo deve conter o conteúdo neste formato: 
+
+```
+MONGO_URI="mongodb+srv://<username>:<password>@<cluster_name>.mongodb.net/<dbname>?retryWrites=true&w=majority"
+``` 
+#### Instalação
+- [Python3](https://www.python.org/downloads/)
+- Gerenciador de dependências [python3-pip ou pip3](https://packaging.python.org/guides/installing-using-linux-tools/#debian-ubuntu)
+
+`sudo apt install python3 && sudo apt install python3-pip && sudo apt install python3-venv`
+
+#### Criando ambiente virtal
+- `python3 -m venv <nome_do_ambiente>`
+
+#### Ativando ambiente virtual
+- `source <nome_do_ambiente>/bin/activate`
+
+#### Instalação de dependências
+`pip3 install -r requirements.txt`
+
+#### Execução do projeto
+`python3 app.py`
+
 ## Agradecimentos
 [@lucifernandes](https://github.com/lucifernandes) - Pela Padronização e organização da base de dados
