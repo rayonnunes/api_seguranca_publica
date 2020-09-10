@@ -87,7 +87,7 @@ curl --request GET \
 }
 ```
 
-#### Região
+#### Regiões
 A Região pode ser informados por siglas com 2 caracteres [case-insensitive](https://pt.wiktionary.org/wiki/case_insensitive)
 
 | Nome da Região | Parâmetro |
@@ -99,7 +99,7 @@ A Região pode ser informados por siglas com 2 caracteres [case-insensitive](htt
 | Sul            | `su`      |
 
 
-#### Estado UF
+#### Estados UF
 O estado podem ser informados por siglas com 2 caracteres [case-insensitive](https://pt.wiktionary.org/wiki/case_insensitive)
 
 | Estado              | Parâmetro |
