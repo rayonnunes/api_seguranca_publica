@@ -6,6 +6,19 @@ from filters.get_filter import get_ano, get_mes, get_crime, get_uf, get_regiao, 
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    response_data = {
+        "title": "Seja bem vindo a API de ocorrências criminais!!",
+        "repositorio": "https://github.com/rayonnunes/api_seguranca_publica",
+        "documentacao": "https://docs.google.com/document/d/1lVvDhZBcp_k0Hz08HF7o4nEW-oZf9l_FGSSKJEjB0Ak"
+    }
+    response = app.response_class(
+        response=dumps(response_data, ensure_ascii=False).encode('utf8'),
+        status=200,
+        mimetype='application/json'
+    )
+    return response;
 
 @app.route('/api')
 def get_registros():
@@ -73,7 +86,7 @@ def get_registros():
     result["total_results"] = count_results
     result["total_ocorrencias"] = int(count_ocorrencias)
     response = app.response_class(
-        response=dumps(result),
+        response=dumps(result, ensure_ascii=False).encode('utf8'),
         status=200,
         mimetype='application/json'
     )
@@ -81,4 +94,4 @@ def get_registros():
 
 
 if __name__ == '__main__':
-    app.run()
+   app.run(host='0.0.0.0',port=80)
