@@ -18,7 +18,7 @@ A base de dados pode ser consultada clicando [aqui](http://dados.gov.br/dataset/
 
 Todos os filtros são opcionais e podem ser combinados da forma que for mais conveniente:
 
-> todos os parâmetros passam por uma camada de validação. Caso um dado seja informado incorretamente, o parâmetro será desconsiderado  
+> Todos os parâmetros passam por uma camada de validação. Caso um dado seja informado incorretamente, o parâmetro será desconsiderado  
 
 | Parâmetro        | Observação                                                      |Exemplo                |
 | ---------------- | --------------------------------------------------------------- | --------------------- |
