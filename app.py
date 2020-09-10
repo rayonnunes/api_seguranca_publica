@@ -29,8 +29,15 @@ def get_registros():
         "crime": request.args.get('crime'),
         "ano": request.args.get('ano'),
         "mes": request.args.get('mes'),
-        "page": request.args.get('page') if request.args.get('page') is not None else 1,
-        "per_page": request.args.get('per_page') if (request.args.get('per_page')) is not None else 100,
+        "page": request.args.get('page') if request.args.get('page')
+            is not None and
+                request.args.get('page').isnumeric()
+                else 1,
+        "per_page": request.args.get('per_page')
+            if (request.args.get('per_page'))
+                is not None and
+                    request.args.get('per_page').isnumeric()
+                    else 100,
     }
 
     query_filters = {}
@@ -94,4 +101,4 @@ def get_registros():
 
 
 if __name__ == '__main__':
-   app.run(host='0.0.0.0',port=80)
+   app.run()
