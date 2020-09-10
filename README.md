@@ -184,4 +184,5 @@ MONGO_URI="mongodb+srv://<username>:<password>@<cluster_name>.mongodb.net/<dbnam
 
 ## Agradecimentos
 [@lucifernandes](https://github.com/lucifernandes) - Pela Padronização e organização da base de dados
+
 [@doissegundos](https://github.com/doissegundos) - Pelo Deploy da aplicação
