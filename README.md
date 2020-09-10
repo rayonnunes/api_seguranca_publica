@@ -9,7 +9,7 @@ A base de dados pode ser consultada clicando [aqui](http://dados.gov.br/dataset/
 - Por questões de desempenho, as consultas são limitadas à 1000 por página.
 
 **URL:** 
-- Produção: `[todo_url_deploy]/api` 
+- Produção: `http://ec2-54-174-4-15.compute-1.amazonaws.com/api`
 - Desenvolvimento: `http://localhost:5000/api`
 
 **Método:** `GET`
@@ -184,3 +184,4 @@ MONGO_URI="mongodb+srv://<username>:<password>@<cluster_name>.mongodb.net/<dbnam
 
 ## Agradecimentos
 [@lucifernandes](https://github.com/lucifernandes) - Pela Padronização e organização da base de dados
+[@doissegundos](https://github.com/doissegundos) - Pelo Deploy da aplicação
